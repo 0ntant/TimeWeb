@@ -1,0 +1,8 @@
+<a href = 'addForm'>Добавить запись</a>
+{%for record in data%}
+
+<p>1: {{record[1]}} 2: {{record[2]}} 3: {{record[3]}} 4 : {{record[4]}}
+</p><a href = '?delete={{record[0]}}'>Удалить</a> <a href = 'editForm?edit={{record[0]}}'>Изменить</a><br>
+
+
+{% endfor %}
